@@ -106,7 +106,7 @@ git push -u origin main
 腳本內容如下
 要特別注意的是，如果主分支是 `master` 的話，記得要換掉腳本中所有的 `main`。
 
-```bash
+```bash showLineNumbers {32}
 #!/usr/bin/env sh
 
 # abort on errors
@@ -155,7 +155,24 @@ cd -
 
 ![[截圖 2023-01-26 上午4.17.28.png]]
 
-這是因為我們剛剛已經對 `router` 的 `base path` 進行修改，現在我們要加入一些判斷，
+這是因為我們剛剛已經對 `router` 的 `base path` 進行修改。
+
+現在我們要加入一些判斷，來讓設定檔只有正式環境中才需要進行修改。
+
+- vite.config
+```javascript showLineNumbers
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/vite-router-demo/' : '',
+  plugins: [vue()],
+})
+
+```
+
+這裡我們透過 `process.env.NODE_ENV` 的方式來得知當前的
 
 這是因為
 
