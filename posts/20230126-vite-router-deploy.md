@@ -1,6 +1,6 @@
 ---
 title: 如何將 Vite + Vue-Roueter 專案部署到 Github Pages
-description: 使用 Vite + Vue-Router 如何部署到 Github Pages
+description: 紀錄關於 Vite + Vue-Router 專案中部署到 Github Pages 的流程跟會遇到的問題
 slug: 20230126-vite-router-deploy
 date: 2023-01-26
 type: Post
@@ -92,7 +92,7 @@ git push -u origin main
 
 這樣就將整個專案推送到 Github 的 Repository 上了。
 
-順帶一提，`commit` 時如果不帶 `-m` 參數的話，會進入到 vi 或 vim 編輯器中，一樣能進行 `commit` ，不過可能會遇到出不來、不能打字的問題，這又是另一段故事了...
+>順帶一提，`commit` 時如果不帶 `-m` 參數的話，會進入到 vi 或 vim 編輯器中，一樣能進行 `commit` ，不過可能會遇到出不來、不能打字的問題，這又是另一段故事了...
 
 但目前我們的專案還沒辦法掛到 GitHub Pages 上。
 我們真正要掛載的是，打包出來的檔案。
@@ -101,7 +101,7 @@ git push -u origin main
 
 這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本。
 
->腳本簡單說就是將上面使用過的密密麻麻指令放在腳本裡，當執行腳本時，就會自動執行腳本內的指令。
+> 腳本簡單說就是將上面使用過的密密麻麻指令放在腳本裡，當執行腳本時，就會自動執行腳本內的指令。
 
 腳本內容如下
 要特別注意的是，如果主分支是 `master` 的話，記得要換掉腳本中所有的 `main`。
