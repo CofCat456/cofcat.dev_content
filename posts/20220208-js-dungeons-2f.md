@@ -123,7 +123,7 @@ template: `<div class="clock-stext" :style="{ 'transform': rotate,
 
 接著在 CSS 中用 **content: attr(data-text)** 來動態切換 **content** 的值!
 
-```css
+```css {2}
 .clock-text::before {
 	content: attr(data-text);
 	position: absolute;
@@ -145,7 +145,7 @@ attr()目前根據 MDN 文件記載，除了 content 以外，其他屬性的使
 
 接下來要做的是將數字擺正，這裡我使用 CSS 變數來做動態更換。
 
-```css
+```css {10, 16}
 .clock-text {
 	width: 1px;
 	height: 250px;
@@ -220,7 +220,7 @@ app.component('clock-point', {
 
 ### 時間處理
 
-```javascript:index.html showLineNumbers
+```javascript
 const app = Vue.createApp({
 	data() {
 		return {
