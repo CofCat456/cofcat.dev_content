@@ -177,8 +177,8 @@ app.component('clock-point', {
 	props: ['z'],
 	template: `<div v-if='(z % 3 !== 0)' class="clock-point" :style="{ 'transform': pointRotate }"></div>
 	<div v-else-if='(z % 6 !== 0)' class='star' :style="{ 'transform': pointRotate }">
-	<div class='star-top'></div>
-	<div class='star-bottom'></div>
+		<div class='star-top'></div>
+		<div class='star-bottom'></div>
 	</div>`,
 	created() {
 		this.pointRotate = `rotate(${this.z * 5}deg)`;
@@ -210,34 +210,21 @@ const app = Vue.createApp({
 	},
 	methods: {
 		setTime() {
-			let data = new Date(); // 抓取時間
-			let second = data.getSeconds();
-			let min = data.getMinutes();
-			let hour = data.getHours();
+			const data = new Date();                        // 抓取時間
+			const second = data.getSeconds();
+			const min = data.getMinutes();
+			const hour = data.getHours();
 			this.setClock(second, min, hour);
 		},
-	setClock(second, min, hour) {
-	this.secondDeg = second * 6; // 360度 / 60秒
-	
-	this.minDeg = min * 6 + (second * 6) / 60; // 360度 / 60秒
-	
-	this.hourDeg = hour * 30 + (min * 30) / 60; // 360度 / 12小時
-	
-	console.log('秒針角度', this.secondDeg);
-	
-	console.log('分針角度', this.minDeg);
-	
-	console.log('時針角度', this.hourDeg);
-	
-	console.log(second);
-	
+		setClock(second, min, hour) {
+			this.secondDeg = second * 6;                    // 360度 / 60秒
+			this.minDeg = min * 6 + (second * 6) / 60;      // 360度 / 60秒
+			this.hourDeg = hour * 30 + (min * 30) / 60;     // 360度 / 12小時
+		},
 	},
-	
-	},
-	
 	mounted() {
-	this.setTime();
-	setInterval(this.setTime, 1000);
+		this.setTime();
+		setInterval(this.setTime, 1000);
 	},
 });
 ```
