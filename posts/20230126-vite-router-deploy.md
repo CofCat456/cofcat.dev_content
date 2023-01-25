@@ -160,7 +160,8 @@ cd -
 現在我們要加入一些判斷，來讓設定檔只有正式環境中才需要進行修改。
 
 - vite.config
-```javascript showLineNumbers
+
+```javascript showLineNumbers {6}
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -172,9 +173,35 @@ export default defineConfig({
 
 ```
 
-這裡我們透過 `process.env.NODE_ENV` 的方式來得知當前的
+這裡我們透過 `process.env.NODE_ENV` 的方式來得知當前的環境是在開發還是正式。
 
-這是因為
+- Vue-Router
+
+```javascript showLineNumbers {5-6}
+import { createRouter, createWebHistory } from 'vue-router';
+import HelloWrold from '../components/HelloWorld.vue';
+import RouterTest from '../components/RouterTest.vue';
+
+const path = process.env.NODE_ENV === 'production' ? '/vite-router-demo/' : ''
+const history = createWebHistory(path);
+const routes = [
+  {
+    path: '/',
+    name: 'Hello',
+    component: HelloWrold
+  },
+  {
+    path: '/test',
+    name: 'RouterTest',
+    component: RouterTest
+  }
+];
+
+export default createRouter({ history, routes });
+
+```
+
+這是也是一樣的原理，到這裡就設定結束了～
 
 ## 參考
 
