@@ -19,7 +19,7 @@ socialImage:
 # 初始化 git 並建立新的本地端 repository。
 git init
 
-# 使用 .(-all) 將所有檔案加入追蹤
+# 使用 .(--all) 將所有檔案加入追蹤
 git add .
 
 # 提交目前的儲存的異動，並透過 `-m` 參數設定摘要說明文字。
@@ -31,9 +31,11 @@ git commit -m "initial"
 git branch -M main
 
 # 添加遠端數據庫
-git remote add origin <遠端數據庫 url>
+git remote add origin <遠端儲存庫 url>
 
-# 
+# 推送到你的遠端數據庫
+# 並使用 -u 參數將預設的遠端儲存庫為 origin
+# origin 為預設遠端儲存庫的參照名稱
 git push -u origin main
 ```
 
