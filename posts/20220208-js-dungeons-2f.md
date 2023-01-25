@@ -245,6 +245,7 @@ const app = Vue.createApp({
 > 最後只要傳上 GigHub Page 就完成了挑戰了(灑花)
 
 [Demo](https://cofcat456.github.io/JS-Dungeons/2F/)
+
 [Repo](https://github.com/CofCat456/JS-Dungeons/tree/gh-pages/2F)
 
 ---
