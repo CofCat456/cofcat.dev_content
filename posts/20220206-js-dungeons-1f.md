@@ -47,26 +47,6 @@ _Step 2_ : 由於在 container 中使用了 align-items: center ，會將裡頭
 
 _Step 3_ : 接著要處理 wrap 裡頭的 card*8 ，再設定完每一個 card 的大小為 350px X 366px 後 ，開始處理排序的問題，一樣使用 flex 讓元素自動分配空間，加上 **flex-wrap: wrap** 讓元素超出範圍時自動換行，再來使用 **justify-content: space-between** 來讓每個元素的間距拉出來。
 
-![](https://cdn-images-1.medium.com/max/800/1*WFIHw5Y8hYF3ihysTlLrHw.png)
-
-**1F — 9x9 乘法表畫面 CSS**
-
-_Step 4 :_ 最後處理小細節，由於畫面中中間排的 card 上下 margin 為 40px，而上下排則不用設定，因此這裡我使用 **nth-child()** 選擇器來調整 wrap 中第4、5、6 個 div。
-
-![](https://cdn-images-1.medium.com/max/800/1*29rzmlVYegcRMqSKFRpAsA.png)
-
-**1F — 9x9 乘法表畫面 CSS**
-
-接著處理 card 中的元素排列
-
-_Step 1 :_ 這裡我將 card 裡頭新增一個 box 設定大小為 270px X 268px ，設定 margin 左右為 auto 來讓兩邊間距為 ( 360px - 270px ) / 2 = 40px ，接著加上 Flex 的設定 flex-direction: column 、 **flex-wrap: wrap** 。
-
-_Step 2 : 新增_文字大小、顏色等等的設定，這裡都是按照設計稿來設定。
-
-_Step 3 : card 的高度之_所以設定 268px ，是因為在設計稿中，左邊會有一個 153px 高度的大數字，再來才是高度 33px 的算式，並且每行之間的距離為 8px ，因此可以得出 ( 153px + 33px * 3 + 8px * 2 = 268px ) ，為了讓每行的距離拉出來，在父層增加 **justify-content: space-between** ，這樣 8px 的間距就出來了，接著 h1標籤距離頂端的距離為 34px 所以加上 margin-top:34px 的設定。
-
-_Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必須額外調整，右邊第一排與 card 頂端的距離為 64px ，扣除剛剛已經加上的 34px，利用 nth-child 選取器加上 margin-top: 30px ，這樣右邊的高度 ( 33px * 6 + 30px + 8px * 5 = 268px ) 也已經符合囉。
-
 ```css
 /* 畫面大小 */
 
@@ -99,6 +79,69 @@ _Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必�
 	opacity: 1;
 }
 ```
+**1F — 9x9 乘法表畫面 CSS**
+
+_Step 4 :_ 最後處理小細節，由於畫面中中間排的 card 上下 margin 為 40px，而上下排則不用設定，因此這裡我使用 **nth-child()** 選擇器來調整 wrap 中第4、5、6 個 div。
+
+```css
+.wrap div:nth-child(4),
+.wrap div:nth-child(5),
+.wrap div:nth-child(6) {
+	margin: 40px 0;
+}
+```
+
+**1F — 9x9 乘法表畫面 CSS**
+
+接著處理 card 中的元素排列
+
+_Step 1 :_ 這裡我將 card 裡頭新增一個 box 設定大小為 270px X 268px ，設定 margin 左右為 auto 來讓兩邊間距為 ( 360px - 270px ) / 2 = 40px ，接著加上 Flex 的設定 flex-direction: column 、 **flex-wrap: wrap** 。
+
+_Step 2 : 新增_文字大小、顏色等等的設定，這裡都是按照設計稿來設定。
+
+_Step 3 : card 的高度之_所以設定 268px ，是因為在設計稿中，左邊會有一個 153px 高度的大數字，再來才是高度 33px 的算式，並且每行之間的距離為 8px ，因此可以得出 ( 153px + 33px * 3 + 8px * 2 = 268px ) ，為了讓每行的距離拉出來，在父層增加 **justify-content: space-between** ，這樣 8px 的間距就出來了，接著 h1標籤距離頂端的距離為 34px 所以加上 margin-top:34px 的設定。
+
+_Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必須額外調整，右邊第一排與 card 頂端的距離為 64px ，扣除剛剛已經加上的 34px，利用 nth-child 選取器加上 margin-top: 30px ，這樣右邊的高度 ( 33px * 6 + 30px + 8px * 5 = 268px ) 也已經符合囉。
+
+```css
+.card .box {
+	width: 270px;
+	height: 268px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 34px auto 0;
+}
+
+.card .box p:nth-child(5){
+	margin-top: 30px;
+}
+
+.card h1 {
+	width: 71px;
+	height: 153px;
+	margin-left: 21px;
+	font-size: 128px;
+	letter-spacing: 0px;
+	color: #2eb738;
+	text-shadow: 4px 3px 0px #f0f0f0;
+	opacity: 1;
+}
+
+.card p {
+	width: 118px;
+	height: 33px;
+	margin-right: 34px;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	font-size: 23.5px;
+	letter-spacing: 0px;
+	color: #2eb738;
+	opacity: 1;
+}
+```
 
 **1F — 9x9 乘法表 Card CSS**
 
@@ -114,7 +157,10 @@ _Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必�
 
 _Step 1 :_ 我將 card 做成元件後，使用 v-for 的方式印出 8 個元件，同時利用props 來接受每一次的 ++count 值。
 
-![](https://cdn-images-1.medium.com/max/800/1*amfWauGRO9827G-12BsS5w.png)
+```javascript
+<card v-for="count in 8" :i="++count" :key="++count"></card>
+```
+
 
 **1F — 9x9 乘法表 Vue Components Code**
 
