@@ -8,14 +8,30 @@ socialImage:
 ---
 
 ## 前言
+
 記錄關於 Vite + Vue-Router 專案部署到 Github Pages 上的流程。
 
 ## 環境建立
 
-首先先建立一個 Vite 專案，這裡使用官網的[安裝](https://vitejs.dev/guide/)指令。
-```shell
+首先
+
+```bash
+npm create vite@latest
+
+# yarn
+yarn create vite
 ```
 
+建立好環境後安裝需要手動安裝 Vue-Router。
+
+```bash
+npm install vue-router@
+
+# yarn 
+yarn add vue-router@
+```
+
+環境都建立好後，接下來
 
 
 
