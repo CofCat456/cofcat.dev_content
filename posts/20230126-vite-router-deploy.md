@@ -13,13 +13,18 @@ socialImage:
 
 ## 環境建立
 
-首先
+首先將整個專案推送到 main / master 分之
 
 ```bash
-npm create vite@latest
+# 初始化 git 並建立新的本地端 repository。
+git init
 
-# yarn
-yarn create vite
+# 使用 .(-all) 
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CofCat456/vite-router-demo.git
+git push -u origin main
 ```
 
 建立好環境後安裝需要手動安裝 Vue-Router。
