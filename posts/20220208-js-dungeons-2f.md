@@ -145,7 +145,25 @@ attr()目前根據 MDN 文件記載，除了 content 以外，其他屬性的使
 
 接下來要做的是將數字擺正，這裡我使用 CSS 變數來做動態更換。
 
-![](https://cdn-images-1.medium.com/max/800/1*Xt46iW4r_2adNBmu-yJlww.png)
+```css:2F.css
+.clock-text {
+	width: 1px;
+	height: 250px;
+	position: absolute;
+	left: 154.5px;
+	bottom: 30px;
+	color: #fff;
+	background-color: #ff7600;
+	font-size: 10px;
+	--textRotate: rotate(-30deg);
+}
+
+.clock-text::before {
+	content: attr(data-text);
+	position: absolute;
+	transform: translate(-6px, -20px) var(--textRotate);
+}
+```
 
 [**詳細可以看卡斯伯老師的文章**](https://w3c.hexschool.com/blog/21985acb)
 
@@ -245,7 +263,6 @@ const app = Vue.createApp({
 > 最後只要傳上 GigHub Page 就完成了挑戰了(灑花)
 
 [Demo](https://cofcat456.github.io/JS-Dungeons/2F/)
-
 [Repo](https://github.com/CofCat456/JS-Dungeons/tree/gh-pages/2F)
 
 ---

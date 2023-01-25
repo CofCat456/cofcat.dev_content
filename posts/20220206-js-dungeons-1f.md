@@ -47,7 +47,7 @@ _Step 2_ : 由於在 container 中使用了 align-items: center ，會將裡頭
 
 _Step 3_ : 接著要處理 wrap 裡頭的 card*8 ，再設定完每一個 card 的大小為 350px X 366px 後 ，開始處理排序的問題，一樣使用 flex 讓元素自動分配空間，加上 **flex-wrap: wrap** 讓元素超出範圍時自動換行，再來使用 **justify-content: space-between** 來讓每個元素的間距拉出來。
 
-```css:1F.css
+```css:1F.css showLineNumbers
 /* 畫面大小 */
 
 .container {
