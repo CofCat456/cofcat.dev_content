@@ -15,7 +15,7 @@ socialImage: https://cdn-images-1.medium.com/max/800/1*Jzgsv9EDB6crgxrVJCUY1g.pn
 
 > **_這篇是六角學院的_** [**_JavaScript 題目篇-_** 🐲 **_新手 JS 地下城_**](https://courses.hexschool.com/courses/enrolled/674121)**_，_**[**_1F Boss 關卡「9x9 乘法表」_**](https://courses.hexschool.com/courses/javascript-js/lectures/12019663)**_攻略過程心得。_**
 
-在學習完 [**JS 必修篇**](https://courses.hexschool.com/courses/enrolled/1463822)和[**核心篇**](https://courses.hexschool.com/courses/enrolled/670037)後，決定來挑戰一下六角學院所推出的 **JS 地下城**，目前剛好將 [**Vue 實戰影音的課程**](https://courses.hexschool.com/courses/enrolled/1326387)上到一半，所以儘量都使用 Vue 來完成挑戰。
+在學習完 [**JS 必修篇**](https://courses.hexschool.com/courses/enrolled/1463822) 和 [**核心篇**](https://courses.hexschool.com/courses/enrolled/670037) 後，決定來挑戰一下六角學院所推出的 **JS 地下城**，目前剛好將 [**Vue 實戰影音的課程**](https://courses.hexschool.com/courses/enrolled/1326387) 上到一半，所以儘量都使用 Vue 來完成挑戰。
 
 ---
 
@@ -166,13 +166,24 @@ _Step 1 :_ 我將 card 做成元件後，使用 v-for 的方式印出 8 個元�
 
 _Step 2 :_ 再次使用 v-for 來引出 p 標籤，然後將傳入的 i 跟 j 分別帶入算式就大功告成囉 。
 
-![](https://cdn-images-1.medium.com/max/800/1*I1mX5F3Zsd33Fp8qP1eJlQ.png)
+```javascript
+app.component('card', {
+	props: ['i'],
+	template: `<div class="card">
+		<div class="box">
+			<h1>{{ i }}</h1>
+			<p v-for='j in 9'>{{ i }} × {{ j }} ＝ {{ i*j }}</p>
+		</div>
+  </div>`,
+});
+```
 
 **1F — 9x9 乘法表 Vue Components Code**
 
 > 接著只要傳上 GigHub Page 就完成了挑戰了(灑花)
 
-[完成品 Demo](https://cofcat456.github.io/JS-Dungeons/1F/)
+[Demo](https://cofcat456.github.io/JS-Dungeons/1F/)
+[Repo](https://github.com/CofCat456/JS-Dungeons/tree/gh-pages/1F)
 
 ---
 
@@ -182,6 +193,6 @@ _Step 2 :_ 再次使用 v-for 來引出 p 標籤，然後將傳入的 i 跟 j �
 
 Photo by [Samantha Gades](https://unsplash.com/@srosinger3997?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
-收穫還是蠻多的，難度比六角學院JS課程的作業更有挑戰性，除了畫面需要自己切版，卡關時也需要自己去找尋資料才有辦法完成，很適合來考驗自己的能力!
+收穫還是蠻多的，難度比六角學院 JS 課程的作業更有挑戰性，除了畫面需要自己切版，卡關時也需要自己去找尋資料才有辦法完成，很適合來考驗自己的能力!
 
-在這關中，深刻體會自己切版的能力需要加強，大部分時間都花在寫 CSS 上，真正 JS 的部分大概只花了不到15分鐘，開始懷疑這關是不是趁機考驗切版的能力...?
+在這關中，深刻體會自己切版的能力需要加強，大部分時間都花在寫 CSS 上，真正 JS 的部分大概只花了不到 15 分鐘，開始懷疑這關是不是趁機考驗切版的能力...?
