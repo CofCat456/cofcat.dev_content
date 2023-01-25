@@ -51,11 +51,50 @@ Alex 老師的頻道有好多 JS 和 Vue 的影片，看起來又發現了新大
 
 首先需要處理的時鐘中的背景，最麻煩的也就是中間的刻度，這裡我使用元件的方式，將內外數字和點拆成三部分來完成。
 
-![](https://cdn-images-1.medium.com/max/800/1*VJfu2TMfWrZGgwZZQ57deA.png)
+```javascript
+app.component('clock-text', {
+	data() {
+			return {
+				textCss: {
+				rotate: '',
+				content: '',
+				textRotate: '',
+			},
+		};
+	},
+	props: ['x'],
+	template: `<div class="clock-text" :style="{ 'transform': rotate,
+	'--textRotate': textRotate }" :data-text='text'></div>`,
+	created() {
+		this.rotate = `rotate(${this.x * 30}deg)`;
+		this.text = this.x + 12 + '';
+		this.textRotate = `rotate(${this.x * -30}deg)`;
+	},
+});
+```
 
 **2F — 時鐘刻度 Component**
 
-![](https://cdn-images-1.medium.com/max/800/1*2A43X1tbQ2EQs8gGUN5GuA.png)
+```javascript
+app.component('clock-stext', {
+	data() {
+		return {
+			textCss: {
+				rotate: '',
+				stextRotate: '',
+			},
+		};
+	},
+	props: ['y'],
+	template: `<div class="clock-stext" :style="{ 'transform': rotate,
+	'--stextRotate': stextRotate }" :data-stext='y'></div>`,
+	created() {
+		this.rotate = `rotate(${this.y * 30}deg)`;
+		this.stextRotate = `rotate(${this.y * -30}deg)`;
+	},
+});
+```
+
 
 **2F — 時鐘刻度 Component**
 
@@ -81,7 +120,13 @@ Alex 老師的頻道有好多 JS 和 Vue 的影片，看起來又發現了新大
 
 接著在 CSS 中用 **content: attr(data-text)** 來動態切換 **content** 的值!
 
-![](https://cdn-images-1.medium.com/max/800/1*1DomJq8alJ7hV8RFSzDHJg.png)
+```css
+.clock-text::before {
+	content: attr(data-text);
+	position: absolute;
+	transform: translate(-6px, -20px) var(--textRotate);
+}
+```
 
 **只要將 data 值 放入 attr() 內就可以使用!**
 
@@ -119,7 +164,57 @@ attr()目前根據 MDN 文件記載，除了 content 以外，其他屬性的使
 
 點的部分就沒什麼問題了，只要注意**每一個點的角度**跟和**星星**與**數字的位置**，透過 **JS 判斷**就可以完成。
 
-![](https://cdn-images-1.medium.com/max/800/1*P7rQmsIrvonP4d82FSuOhg.png)
+```javascript
+app.component('clock-point', {
+
+data() {
+
+return {
+
+textCss: {
+
+pointRotate: '',
+
+startRotate: '',
+
+},
+
+};
+
+},
+
+props: ['z'],
+
+template: `<div v-if='(z % 3 !== 0)' class="clock-point" :style="{ 'transform': pointRotate }"></div>
+
+<div v-else-if='(z % 6 !== 0)' class='star' :style="{ 'transform': pointRotate }">
+
+<div class='star-top'></div>
+
+<div class='star-bottom'></div>
+
+</div>`,
+
+created() {
+
+this.pointRotate = `rotate(${this.z * 5}deg)`;
+
+if (this.z === 1) {
+
+this.startRotate = `rotate(${this.z * 15}deg)`;
+
+} else {
+
+this.startRotate = `rotate(${this.z * 30}deg)`;
+
+}
+
+console.log(this.pointRotate);
+
+},
+
+});
+```
 
 **2F — 時鐘刻度 Component**
 
