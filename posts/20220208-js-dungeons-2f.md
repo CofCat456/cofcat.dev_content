@@ -166,53 +166,28 @@ attr()目前根據 MDN 文件記載，除了 content 以外，其他屬性的使
 
 ```javascript
 app.component('clock-point', {
-
-data() {
-
-return {
-
-textCss: {
-
-pointRotate: '',
-
-startRotate: '',
-
-},
-
-};
-
-},
-
-props: ['z'],
-
-template: `<div v-if='(z % 3 !== 0)' class="clock-point" :style="{ 'transform': pointRotate }"></div>
-
-<div v-else-if='(z % 6 !== 0)' class='star' :style="{ 'transform': pointRotate }">
-
-<div class='star-top'></div>
-
-<div class='star-bottom'></div>
-
-</div>`,
-
-created() {
-
-this.pointRotate = `rotate(${this.z * 5}deg)`;
-
-if (this.z === 1) {
-
-this.startRotate = `rotate(${this.z * 15}deg)`;
-
-} else {
-
-this.startRotate = `rotate(${this.z * 30}deg)`;
-
-}
-
-console.log(this.pointRotate);
-
-},
-
+	data() {
+			return {
+			textCss: {
+				pointRotate: '',
+				startRotate: '',
+				},
+		};
+	},
+	props: ['z'],
+	template: `<div v-if='(z % 3 !== 0)' class="clock-point" :style="{ 'transform': pointRotate }"></div>
+	<div v-else-if='(z % 6 !== 0)' class='star' :style="{ 'transform': pointRotate }">
+	<div class='star-top'></div>
+	<div class='star-bottom'></div>
+	</div>`,
+	created() {
+		this.pointRotate = `rotate(${this.z * 5}deg)`;
+		if (this.z === 1) {
+			this.startRotate = `rotate(${this.z * 15}deg)`;
+		} else {
+			this.startRotate = `rotate(${this.z * 30}deg)`;
+		}
+	},
 });
 ```
 
@@ -224,7 +199,48 @@ console.log(this.pointRotate);
 
 ### 時間處理
 
-![](https://cdn-images-1.medium.com/max/800/1*k1f7jVxgBmBnpAZ_UGmQaQ.png)
+```javascript
+const app = Vue.createApp({
+	data() {
+		return {
+			secondDeg: 0,
+			minDeg: 0,
+			hourDeg: 0,
+		};
+	},
+	methods: {
+		setTime() {
+			let data = new Date(); // 抓取時間
+			let second = data.getSeconds();
+			let min = data.getMinutes();
+			let hour = data.getHours();
+			this.setClock(second, min, hour);
+		},
+	setClock(second, min, hour) {
+	this.secondDeg = second * 6; // 360度 / 60秒
+	
+	this.minDeg = min * 6 + (second * 6) / 60; // 360度 / 60秒
+	
+	this.hourDeg = hour * 30 + (min * 30) / 60; // 360度 / 12小時
+	
+	console.log('秒針角度', this.secondDeg);
+	
+	console.log('分針角度', this.minDeg);
+	
+	console.log('時針角度', this.hourDeg);
+	
+	console.log(second);
+	
+	},
+	
+	},
+	
+	mounted() {
+	this.setTime();
+	setInterval(this.setTime, 1000);
+	},
+});
+```
 
 **2F — 時鐘 Vue Code**
 
@@ -238,7 +254,8 @@ console.log(this.pointRotate);
 
 > 最後只要傳上 GigHub Page 就完成了挑戰了(灑花)
 
-[完成品 Demo](https://cofcat456.github.io/JS-Dungeons/2F/)
+[Demo](https://cofcat456.github.io/JS-Dungeons/2F/)
+[Repo](https://github.com/CofCat456/JS-Dungeons/tree/gh-pages/2F)
 
 ---
 
