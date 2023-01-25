@@ -25,10 +25,15 @@ git add .
 # 提交目前的儲存的異動，並透過 `-m` 參數設定摘要說明文字。
 git commit -m "initial"
 
-# 順帶一提，如果不使用參數，而
-
+# 這行可以選擇不要執行
+# 主要是將你的 master 分之改名為 main
+# 一但改名了，後面都要跟著改動
 git branch -M main
-git remote add origin https://github.com/CofCat456/vite-router-demo.git
+
+# 添加遠端數據庫
+git remote add origin <遠端數據庫 url>
+
+# 
 git push -u origin main
 ```
 
