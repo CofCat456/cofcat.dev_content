@@ -201,7 +201,7 @@ export default createRouter({ history, routes });
 
 ```
 
-這是也是一樣的原理，到這裡就設定結束了～
+這是也是一樣的原理，到這裡就設定結束了 🎉
 
 ## 參考
 
