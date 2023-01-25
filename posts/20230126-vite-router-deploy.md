@@ -17,7 +17,7 @@ socialImage:
 
 ### 設定
 
-- vite.config<br>
+- vite.config  
   首先需要先確認專案底下是否有 `vite.config.js` 的檔案，沒有的話請建立一個，接著我們需要將 Repository 的名稱加入設定檔中。
   
 ```javascript showLineNumbers {6}
@@ -34,7 +34,7 @@ export default defineConfig({
 
 這樣就設定完 Vite
 
-- Vue-Router <br>
+- Vue-Router  
   接下來需要設定 `router` 的 `base path`，不設定的話，可能會造成掛載後，router 路徑錯誤或是找不到頁面的問題。
 
 ```javascript showLineNumbers {5}
