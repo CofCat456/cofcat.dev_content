@@ -11,7 +11,7 @@ socialImage:
 
 記錄關於 Vite + Vue-Router 專案部署到 Github Pages 上的流程。
 
-## 部屬
+## 部屬到 Github
 
 首先將整個專案推送到 main / master 分之
 
@@ -41,8 +41,10 @@ git push -u origin main
 
 這樣就將整個專案推送到 Github 的 Repository 上了。
 
-但目前我們的專案還沒辦法掛到
+但目前我們的專案還沒辦法掛到 Github Page 上。
+我們真正要掛載的是，打包出來的檔案。
 
+這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本，
 
 ```bash
 npm install vue-router@
