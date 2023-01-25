@@ -9,7 +9,7 @@ socialImage:
 
 ## 前言
 
-記錄關於 Vite + Vue-Router 專案部署到 Github Pages 上的流程。
+記錄關於 Vite + Vue-Router 專案部署到 Github Pages 上的流程及可能會遇到的問題。
 
 ## 部屬流程
 
@@ -17,7 +17,7 @@ socialImage:
 
 ### 設定
 
-- vite.config
+- vite.config<br>
   首先需要先確認專案底下是否有 `vite.config.js` 的檔案，沒有的話請建立一個，接著我們需要將 Repository 的名稱加入設定檔中。
   
 ```javascript showLineNumbers {6}
@@ -34,7 +34,7 @@ export default defineConfig({
 
 這樣就設定完 Vite
 
-- Vue-Router
+- Vue-Router <br>
   接下來需要設定 `router` 的 `base path`，不設定的話，可能會造成掛載後，router 路徑錯誤或是找不到頁面的問題。
 
 ```javascript showLineNumbers {5}
@@ -92,12 +92,12 @@ git push -u origin main
 
 這樣就將整個專案推送到 Github 的 Repository 上了。
 
->順帶一提，`commit` 時如果不帶 `-m` 參數的話，會進入到 vi 或 vim 編輯器中，一樣能進行 `commit` ，不過可能會遇到出不來、不能打字的問題，這又是另一段故事了...
+>順帶一提，`commit` 時如果不帶 `-m` 參數的話，會進入到 vi 或 vim 編輯器中，一樣能進行 `commit` ，不過可能會遇到出不來、不能打字的問題，這樣的話就是另一段故事了...
 
-但目前我們的專案還沒辦法掛到 GitHub Pages 上。
+目前我們的專案還沒辦法掛到 GitHub Pages 上。
 我們真正要掛載的是，打包出來的檔案。
 
-而我們目標是掛載到 `gh-pages` 這個分支上，這樣 GitHub Pages 會自動找到這個分支，並掛載他。
+而我們目標是將打包後的檔案掛載到 `gh-pages` 這個分支上，這樣 GitHub Pages 會自動找到這個分支，並掛載他。
 
 這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本。
 
