@@ -51,7 +51,7 @@ Alex 老師的頻道有好多 JS 和 Vue 的影片，看起來又發現了新大
 
 首先需要處理的時鐘中的背景，最麻煩的也就是中間的刻度，這裡我使用元件的方式，將內外數字和點拆成三部分來完成。
 
-```javascript:index.html
+```javascript:index.html showLineNumbers
 app.component('clock-text', {
 	data() {
 			return {
@@ -75,7 +75,7 @@ app.component('clock-text', {
 
 **2F — 時鐘刻度 Component**
 
-```javascript:index.html
+```javascript:index.html showLineNumbers
 app.component('clock-stext', {
 	data() {
 		return {
@@ -114,7 +114,7 @@ app.component('clock-stext', {
 
 比較特別的是，這裡我使用了 attr() 的語法，由於橘線會重複 12 條，使用 v-for 後，將值 * 12 後加在標籤中。
 
-```javascript:index.html
+```javascript:index.html showLineNumbers
 template: `<div class="clock-stext" :style="{ 'transform': rotate,
 '--stextRotate': stextRotate }" :data-stext='y'></div>`,
 ```
@@ -123,7 +123,7 @@ template: `<div class="clock-stext" :style="{ 'transform': rotate,
 
 接著在 CSS 中用 **content: attr(data-text)** 來動態切換 **content** 的值!
 
-```css:2F.css
+```css:2F.css showLineNumbers
 .clock-text::before {
 	content: attr(data-text);
 	position: absolute;
@@ -145,7 +145,7 @@ attr()目前根據 MDN 文件記載，除了 content 以外，其他屬性的使
 
 接下來要做的是將數字擺正，這裡我使用 CSS 變數來做動態更換。
 
-```css:2F.css
+```css:2F.css showLineNumbers
 .clock-text {
 	width: 1px;
 	height: 250px;
@@ -185,7 +185,7 @@ attr()目前根據 MDN 文件記載，除了 content 以外，其他屬性的使
 
 點的部分就沒什麼問題了，只要注意**每一個點的角度**跟和**星星**與**數字的位置**，透過 **JS 判斷**就可以完成。
 
-```javascript:index.html
+```javascript:index.html showLineNumbers
 app.component('clock-point', {
 	data() {
 			return {
@@ -220,7 +220,7 @@ app.component('clock-point', {
 
 ### 時間處理
 
-```javascript:index.html
+```javascript:index.html showLineNumbers
 const app = Vue.createApp({
 	data() {
 		return {
