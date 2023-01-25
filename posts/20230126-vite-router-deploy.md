@@ -26,7 +26,7 @@ git add .
 git commit -m "initial"
 
 # 這行可以選擇不要執行
-# 主要是將你的 master 分之改名為 main
+# 主要是將你的 master 分支改名為 main
 # 一但改名了，後面都要跟著改動
 git branch -M main
 
@@ -49,6 +49,12 @@ yarn add vue-router@
 ```
 
 環境都建立好後，接下來
+
+## 參考
+
+- [30 天精通 Git 版本控管 (25)：使用 GitHub 遠端儲存庫 - 觀念篇](https://ithelp.ithome.com.tw/articles/10140055) iThome 鐵人賽
+- [](https://w3c.hexschool.com/category/repo) W3Hexschool
+
 
 
 
