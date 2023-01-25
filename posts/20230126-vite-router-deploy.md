@@ -17,11 +17,11 @@ socialImage:
 
 首先將整個專案推送到 main / master 分支
 
-```bash showLineNumbers
+```bash showLineNumbers {13, 16, 21}
 # 初始化 git 並建立新的本地端 repository。
 git init
 
-# 使用 .(--all) 將所有檔案加入追蹤
+# 使用 .(--all, -A) 將所有檔案加入追蹤
 git add .
 
 # 提交目前的儲存的異動，並透過 `-m` 參數設定摘要說明文字。
@@ -46,13 +46,45 @@ git push -u origin main
 但目前我們的專案還沒辦法掛到 Github Page 上。
 我們真正要掛載的是，打包出來的檔案。
 
-這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本，簡單說就是將上面的指令放在腳本裡，當執行腳本時，就會自動執行腳本內的指令。
+這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本。
+
+>腳本簡單說就是將上面使用過的密密麻麻指令放在腳本裡，當執行腳本時，就會自動執行腳本內的指令。
+
+這裡指說明需要注意的部分
 
 ```bash
-npm install vue-router@
+#!/usr/bin/env sh
 
-# yarn 
-yarn add vue-router@
+# abort on errors
+set -e
+
+# build
+# 將專案打包
+npm run build
+
+# navigate into the build output directory
+cd dist
+
+# place .nojekyll to bypass Jekyll processing
+echo > .nojekyll
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+
+# 根據本人觀察，這行大多人都會選擇註解掉，影響不大
+git checkout -B main
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+
+cd -
 ```
 
 環境都建立好後，接下來
