@@ -19,9 +19,14 @@ socialImage:
 # 初始化 git 並建立新的本地端 repository。
 git init
 
-# 使用 .(-all) 
+# 使用 .(-all) 將所有檔案加入追蹤
 git add .
-git commit -m "first commit"
+
+# 提交目前的儲存的異動，並透過 `-m` 參數設定摘要說明文字。
+git commit -m "initial"
+
+# 順帶一提，如果不使用參數，而
+
 git branch -M main
 git remote add origin https://github.com/CofCat456/vite-router-demo.git
 git push -u origin main
