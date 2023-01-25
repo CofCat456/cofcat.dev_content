@@ -43,14 +43,17 @@ git push -u origin main
 
 這樣就將整個專案推送到 Github 的 Repository 上了。
 
-但目前我們的專案還沒辦法掛到 Github Page 上。
+但目前我們的專案還沒辦法掛到 GitHub Pages 上。
 我們真正要掛載的是，打包出來的檔案。
+
+而我們目標是掛載到 `gh-pages` 這個分支上，這樣 GitHub Pages
 
 這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本。
 
 >腳本簡單說就是將上面使用過的密密麻麻指令放在腳本裡，當執行腳本時，就會自動執行腳本內的指令。
 
-這裡指說明需要注意的部分
+腳本內容如下
+要特別注意的是，如果主分支是 master 的話，記得要換掉腳本中所有的 main。
 
 ```bash
 #!/usr/bin/env sh
@@ -74,20 +77,22 @@ echo > .nojekyll
 git init
 
 # 根據本人觀察，這行大多人都會選擇註解掉，影響不大
-git checkout -B main
+# git checkout -B main
+
 git add -A
 git commit -m 'deploy'
 
-# if you are deploying to https://<USERNAME>.github.io
+# 如果你要部署在 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+# 一般使用都是選擇這個
+# 如果你要部署在 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
 cd -
 ```
 
-環境都建立好後，接下來
+接下來就可以到 Github 上查看是否有兩個分支，並且都有檔案上傳。
 
 ## 參考
 
