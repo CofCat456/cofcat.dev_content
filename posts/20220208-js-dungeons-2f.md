@@ -114,7 +114,10 @@ app.component('clock-stext', {
 
 比較特別的是，這裡我使用了 attr() 的語法，由於橘線會重複 12 條，使用 v-for 後，將值 * 12 後加在標籤中。
 
-![](https://cdn-images-1.medium.com/max/800/1*ruw6o4J0y16j3PAhvsVGaw.png)
+```javascript
+template: `<div class="clock-stext" :style="{ 'transform': rotate,
+'--stextRotate': stextRotate }" :data-stext='y'></div>`,
+```
 
 **使用 v-bind 綁定 data-text 的值**
 
