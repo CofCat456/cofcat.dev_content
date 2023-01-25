@@ -67,7 +67,38 @@ _Step 3 : card 的高度之_所以設定 268px ，是因為在設計稿中，�
 
 _Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必須額外調整，右邊第一排與 card 頂端的距離為 64px ，扣除剛剛已經加上的 34px，利用 nth-child 選取器加上 margin-top: 30px ，這樣右邊的高度 ( 33px * 6 + 30px + 8px * 5 = 268px ) 也已經符合囉。
 
-![](https://cdn-images-1.medium.com/max/800/1*rhnbYHtGJhufkRUn1N64wQ.png)
+```css
+/* 畫面大小 */
+
+.container {
+	width: 1280px;
+	height: 1372px;
+	background: #f0f0f0 0% 0% no-repeat padding-box;
+	opacity: 1;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrap {
+	width: 1110px;
+	height: 1178px;
+	margin: 80px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	width: 350px;
+	height: 366px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 10px #d8d8d8;
+	border-radius: 100px 0px 30px 0px;
+	opacity: 1;
+}
+```
 
 **1F — 9x9 乘法表 Card CSS**
 
