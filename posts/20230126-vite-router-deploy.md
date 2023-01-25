@@ -20,8 +20,47 @@ socialImage:
 - vite.config
   首先需要先確認專案底下是否有 `vite.config.js` 的檔案，沒有的話請建立一個，接著我們需要將 Repository 的名稱加入設定檔中。
   
-```javascript 
+```javascript showLineNumbers {6}
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: '/REPO/',
+  plugins: [vue()],
+})
+
 ```
+
+這樣就設定完 Vite
+
+- Vue-Router
+  接下來需要設定 `router` 的 `base path`，不設定的話，可能會造成掛載後，router 路徑錯誤或是找不到頁面的問題。
+
+```javascript showLineNumbers {5}
+import { createRouter, createWebHistory } from 'vue-router';
+import HelloWrold from '../components/HelloWorld.vue';
+import RouterTest from '../components/RouterTest.vue';
+
+const history = createWebHistory('/REPO/');
+const routes = [
+  {
+    path: '/',
+    name: 'Hello',
+    component: HelloWrold
+  },
+  {
+    path: '/test',
+    name: 'RouterTest',
+    component: RouterTest
+  }
+];
+
+export default createRouter({ history, routes });
+
+```
+
+都設定好後就可以進入部署的還ㄐ
 
 ### 準備部署
 
