@@ -47,7 +47,7 @@ _Step 2_ : 由於在 container 中使用了 align-items: center ，會將裡頭
 
 _Step 3_ : 接著要處理 wrap 裡頭的 card*8 ，再設定完每一個 card 的大小為 350px X 366px 後 ，開始處理排序的問題，一樣使用 flex 讓元素自動分配空間，加上 **flex-wrap: wrap** 讓元素超出範圍時自動換行，再來使用 **justify-content: space-between** 來讓每個元素的間距拉出來。
 
-```css:1F.css showLineNumbers
+```css
 /* 畫面大小 */
 
 .container {
@@ -83,7 +83,7 @@ _Step 3_ : 接著要處理 wrap 裡頭的 card*8 ，再設定完每一個 card 
 
 _Step 4 :_ 最後處理小細節，由於畫面中中間排的 card 上下 margin 為 40px，而上下排則不用設定，因此這裡我使用 **nth-child()** 選擇器來調整 wrap 中第4、5、6 個 div。
 
-```css:1F.css showLineNumbers
+```css
 .wrap div:nth-child(4),
 .wrap div:nth-child(5),
 .wrap div:nth-child(6) {
@@ -103,7 +103,7 @@ _Step 3 : card 的高度之_所以設定 268px ，是因為在設計稿中，�
 
 _Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必須額外調整，右邊第一排與 card 頂端的距離為 64px ，扣除剛剛已經加上的 34px，利用 nth-child 選取器加上 margin-top: 30px ，這樣右邊的高度 ( 33px * 6 + 30px + 8px * 5 = 268px ) 也已經符合囉。
 
-```css:1F.css showLineNumbers
+```css
 .card .box {
 	width: 270px;
 	height: 268px;
@@ -157,7 +157,7 @@ _Step 4 :_ 但是仔細看右邊會發現並沒有大數字，所以我們必�
 
 _Step 1 :_ 我將 card 做成元件後，使用 v-for 的方式印出 8 個元件，同時利用props 來接受每一次的 ++count 值。
 
-```javascript:index.html showLineNumbers
+```javascript
 <card v-for="count in 8" :i="++count" :key="++count"></card>
 ```
 
@@ -166,7 +166,7 @@ _Step 1 :_ 我將 card 做成元件後，使用 v-for 的方式印出 8 個元�
 
 _Step 2 :_ 再次使用 v-for 來引出 p 標籤，然後將傳入的 i 跟 j 分別帶入算式就大功告成囉 。
 
-```javascript:index.html showLineNumbers
+```javascript
 app.component('card', {
 	props: ['i'],
 	template: `<div class="card">
@@ -182,9 +182,10 @@ app.component('card', {
 
 > 接著只要傳上 GigHub Page 就完成了挑戰了(灑花)
 
-> [Github repo](https://github.com/CofCat456/JS-Dungeons/tree/gh-pages/1F)
->
 > [Demo](https://cofcat456.github.io/JS-Dungeons/1F/)
+> [Repo](https://github.com/CofCat456/JS-Dungeons/tree/gh-pages/1F)
+
+
 ---
 
 ### 心得
