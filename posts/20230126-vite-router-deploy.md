@@ -13,9 +13,11 @@ socialImage:
 
 ## 部屬到 Github
 
-首先將整個專案推送到 main / master 分之
+### 推送專案
 
-```bash
+首先將整個專案推送到 main / master 分支
+
+```bash showLineNumbers
 # 初始化 git 並建立新的本地端 repository。
 git init
 
@@ -44,7 +46,7 @@ git push -u origin main
 但目前我們的專案還沒辦法掛到 Github Page 上。
 我們真正要掛載的是，打包出來的檔案。
 
-這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本，
+這裡我們使用官方所推薦的方式來部署，在[官方的文件](https://vitejs.dev/guide/static-deploy.html#github-pages) 提到需要創建一個 `deploy.sh` 脚本，簡單說就是將上面的指令放在腳本裡，當執行腳本時，就會自動執行腳本內的指令。
 
 ```bash
 npm install vue-router@
