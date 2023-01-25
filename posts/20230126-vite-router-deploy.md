@@ -1,8 +1,8 @@
 ---
-title: {{ title }}
+title: 20230126-vite-router-deploy
 description:
-slug: js-dungeons-2f
-date: {{ date }}
+slug: 20230126-vite-router-deploy
+date: 2023-01-26
 type: Post
 socialImage:
 ---

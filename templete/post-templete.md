@@ -1,8 +1,8 @@
 ---
-title: {{ title }}
+title: {{title}}
 description:
-slug: js-dungeons-2f
-date: {{ date }}
+slug: {{title}}
+date: {{date}}
 type: Post
 socialImage:
 ---
