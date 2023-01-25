@@ -11,7 +11,7 @@ socialImage:
 
 記錄關於 Vite + Vue-Router 專案部署到 Github Pages 上的流程。
 
-## 環境建立
+## 部屬
 
 首先將整個專案推送到 main / master 分之
 
@@ -39,7 +39,10 @@ git remote add origin <遠端儲存庫 url>
 git push -u origin main
 ```
 
-建立好環境後安裝需要手動安裝 Vue-Router。
+這樣就將整個專案推送到 Github 的 Repository 上了。
+
+但目前我們的專案還沒辦法掛到
+
 
 ```bash
 npm install vue-router@
@@ -53,7 +56,7 @@ yarn add vue-router@
 ## 參考
 
 - [30 天精通 Git 版本控管 (25)：使用 GitHub 遠端儲存庫 - 觀念篇](https://ithelp.ithome.com.tw/articles/10140055) iThome 鐵人賽
-- [](https://w3c.hexschool.com/category/repo) W3Hexschool
+- [Git & GitHub 教學手冊](https://w3c.hexschool.com/category/repo) W3Hexschool
 
 
 
