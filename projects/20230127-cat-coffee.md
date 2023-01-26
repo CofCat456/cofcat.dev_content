@@ -7,8 +7,6 @@ type: Post
 socialImage: /images/projects/coffeeShop.jpg
 ---
 
-<img alt="截圖 2022-04-21 下午8 40 42" src="">
-
 ![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 # **貓咖啡 電商咖啡店**
