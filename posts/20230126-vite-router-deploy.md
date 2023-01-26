@@ -1,5 +1,5 @@
 ---
-title: 如何將 Vite + Vue-Roueter 專案部署到 Github Pages
+title: 如何將 Vite + Vue-Router 專案部署到 Github Pages
 description: 紀錄關於 Vite + Vue-Router 專案中部署到 Github Pages 的流程跟會遇到的問題
 slug: 20230126-vite-router-deploy
 date: 2023-01-26
