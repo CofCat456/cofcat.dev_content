@@ -4,7 +4,7 @@ description: 紀錄關於 Vite + Vue-Router 專案中部署到 Github Pages 的�
 slug: 20230126-vite-router-deploy
 date: 2023-01-26
 type: Post
-socialImage:
+socialImage: /images/public/vite.png
 ---
 
 ## 前言
