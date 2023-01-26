@@ -115,7 +115,5 @@ Demo : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 
 <br><hr>
 
-更多資訊歡迎前往 **[貓咖啡](https://cofcat456.github.io/coffeeShop/dist/#/)**  進一步觀看！
-
-> - [REPO] 
-> - [貓咖啡官網] (https://cofcat456.github.io/coffeeShop/dist/#/)
+- 程式碼（Github) : [CofCat456/CoffeeShop](https://github.com/CofCat456/coffeeShop)
+- 官網 : [貓咖啡](https://cofcat456.github.io/coffeeShop/#/)
