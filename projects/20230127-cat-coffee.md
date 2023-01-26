@@ -12,9 +12,9 @@ socialImage: /images/projects/coffeeShop.jpg
 # **貓咖啡 電商咖啡店**
 > 貓咖啡 提供來自全世界的精品咖啡豆，即使生活在疫情時代，也能透過網站購買各式咖啡，除了基本咖啡豆以外，還有、冷萃咖啡、掛耳包、精品禮盒等等，讓你自己喝、一起喝、送別人喝都不成問題！
 
-Demo : [貓咖啡](https://cofcat456.github.io/coffeeShop)
+網站 : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 
-<br>
+---
 
 ## **創店理念**
 咖啡一直都是工作者們必備的良藥，尤其對工程師而言，在平常生活中，我喜歡帶上筆電，到咖啡廳中點一杯拿鐵，聽著店內的lofi音樂，不僅環境舒適，咖啡也帶給我源源不絕的能量，大幅提升我的學習品質。
@@ -24,7 +24,7 @@ Demo : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 
 為了廣大工作者們著想，貓咖啡推出電商網站，雖不能與各位見面，但我們將精心挑選的咖啡豆，送至家中，讓您即使在家工作，也彷彿在咖啡廳般享受！
 
-<br><hr>
+---
 
 ## **專案說明**
 > * 使用 ` Vue.js ` 和 ` Vue CLI ` 進行開發
@@ -53,7 +53,7 @@ Demo : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 * AOS
 * LocalStorage
 
-<br>
+---
 
 ### **前台**
 * 商品展示：首頁、商品列表、商品介紹等
@@ -68,7 +68,7 @@ Demo : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 * 訂單管理：編輯部分訂單資訊、刪除
 * 優惠卷管理：新增、修改、刪除
 
-<br><hr>
+---
 
 ## 前台頁面介紹
 
@@ -113,7 +113,7 @@ Demo : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 ### **優惠卷管理**
 <img width="1440" alt="優惠卷管理頁面" src="https://user-images.githubusercontent.com/93901409/164478123-84e56677-62fe-4cf8-9931-d7d80c1776d1.png">
 
-<br><hr>
+---
 
 - 程式碼（Github) : [CofCat456/CoffeeShop](https://github.com/CofCat456/coffeeShop)
 - 官網 : [貓咖啡](https://cofcat456.github.io/coffeeShop/#/)
