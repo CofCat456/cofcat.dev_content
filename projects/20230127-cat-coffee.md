@@ -7,12 +7,12 @@ type: Post
 socialImage: /images/projects/coffeeShop.jpg
 ---
 
-<img alt="截圖 2022-04-21 下午8 40 42" src="https://user-images.githubusercontent.com/93901409/164461164-22a052d0-5d9f-4ce1-ae66-5ce6ec68f478.png">
+<img alt="截圖 2022-04-21 下午8 40 42" src="">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 # **貓咖啡 電商咖啡店**
 > 貓咖啡 提供來自全世界的精品咖啡豆，即使生活在疫情時代，也能透過網站購買各式咖啡，除了基本咖啡豆以外，還有、冷萃咖啡、掛耳包、精品禮盒等等，讓你自己喝、一起喝、送別人喝都不成問題！
-
-網站 : [貓咖啡](https://cofcat456.github.io/coffeeShop)
 
 ---
 
@@ -36,6 +36,7 @@ socialImage: /images/projects/coffeeShop.jpg
 > * 使用 ` Git ` 版本控制
 
 ### **使用技術**
+
 * Vue 2
 * Vue Cli
 * Vue Single-File Components
@@ -73,45 +74,56 @@ socialImage: /images/projects/coffeeShop.jpg
 ## 前台頁面介紹
 
 ### **首頁** 
-<img width="80%" alt="首頁" src="https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### **商品列表**
-<img width="80%" alt="商品列表-1" src="https://user-images.githubusercontent.com/93901409/164473643-2c3efcaf-b983-4795-9694-869b5ddd3a10.png">
-<img width="80%" alt="商品列表-2" src="https://user-images.githubusercontent.com/93901409/164473703-c402f6d1-eec7-44d2-8a64-94ad5e878564.png">
-<img width="80%" alt="商品列表-3" src="https://user-images.githubusercontent.com/93901409/164473716-340e0490-6886-4aff-8787-5557c8b2cc34.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### **收藏清單**
 * 利用 ` LocalStorage ` 儲存使用者收藏紀錄
 
-<img width="80%" alt="收藏清單" src="https://user-images.githubusercontent.com/93901409/164474042-a0c95f5d-2526-4c5f-988e-85bcad27f2eb.png">
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### **購物車**
 * 可任意修改購買的商品數量（不得為負值）
 * 可套用優惠卷
 
-<img width="80%" alt="購物車" src="https://user-images.githubusercontent.com/93901409/164474819-097cfb24-60a1-451a-a496-64accf8e364f.png">
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### **訂單填寫**
-<img width="80%" alt="訂單填寫" src="https://user-images.githubusercontent.com/93901409/164475904-4a4fb95b-c68e-4bcd-a3d4-d8a46131fe4d.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 * 紅色星號為必填項目
 * 每個欄位皆有格式驗證
 
 ### **訂單建立**
-<img width="80%" alt="訂單建立" src="https://user-images.githubusercontent.com/93901409/164476506-c20fb3f0-8eb8-4428-9030-99abdf746adb.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ## 後台頁面介紹
 
 ### **商品管理頁面**
-<img width="80%" alt="商品管理頁面" src="https://user-images.githubusercontent.com/93901409/164477455-5b799d00-6d11-4fb0-a91c-7aac72a043de.png">
-<img width="80%" alt="商品編輯頁面" src="https://user-images.githubusercontent.com/93901409/164477524-426d61aa-bbfb-4f0a-9bd5-e7980680865c.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### **訂單管理**
-<img width="80%" alt="訂單管理頁面" src="https://user-images.githubusercontent.com/93901409/164477839-0727af3a-cfe2-4d86-afb9-d41408565c00.png">
-<img width="80%" alt="訂單編輯頁面" src="https://user-images.githubusercontent.com/93901409/164477939-3ae0e8db-4bdd-4593-bf9a-8ffd737e61c1.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### **優惠卷管理**
-<img width="1440" alt="優惠卷管理頁面" src="https://user-images.githubusercontent.com/93901409/164478123-84e56677-62fe-4cf8-9931-d7d80c1776d1.png">
+
+![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ---
 
