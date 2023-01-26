@@ -163,7 +163,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/vite-router-demo/' : '',
+  base: process.env.NODE_ENV === 'production' ? '/REPO/' : '',
   plugins: [vue()],
 })
 
@@ -178,7 +178,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HelloWrold from '../components/HelloWorld.vue';
 import RouterTest from '../components/RouterTest.vue';
 
-const path = process.env.NODE_ENV === 'production' ? '/vite-router-demo/' : ''
+const path = process.env.NODE_ENV === 'production' ? '/REPO/' : ''
 const history = createWebHistory(path);
 const routes = [
   {
