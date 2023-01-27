@@ -3,7 +3,7 @@ title: React API Todolist
 description: React 新手讀書會 React & API 專案介紹
 slug: react-api-todolist
 date: 2023-01-27
-type: Post
+type: Project
 socialImage: /images/projects/react_todoList.jpg
 ---
 

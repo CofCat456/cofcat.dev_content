@@ -1,6 +1,6 @@
 ---
-title: 2022 六角大專院校程式體驗營 
-description: 六角大專院校程式體驗營作品
+title: 2022 六角大專院校程式體驗營
+description: 參加六角學院於 2022 舉辦大專院校程式體驗營的期間作品
 slug: hexScool_summer_intern
 date: 2023-01-27
 type: Project

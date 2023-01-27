@@ -1,8 +1,8 @@
 ---
 title: 2022 公益程式體驗營 
 description: 參加六角學院於 2022 舉辦公益體驗營的期間作品
-slug: 20230127-hexSchool_webLayoutTraining1st
-date: 2023-01-27
+slug: webLayoutTraining1st
+date: 2022-08-26
 type: Project
 socialImage: /images/projects/webLayoutTraining1st.jpeg
 ---

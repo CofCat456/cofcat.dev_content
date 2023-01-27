@@ -1,8 +1,8 @@
 ---
-title: 新手 JS 地下城 
-description: 六角學院 - 新手 JS 地下城闖關
-slug: 20230127-js-dungeons
-date: 2023-01-27
+title: 新手 JS 地下城
+description: 六角學院 - 新手 JS 地下城闖關過程紀錄
+slug: js-dungeons
+date: 2022-02-06
 type: Project
 socialImage:
 ---
