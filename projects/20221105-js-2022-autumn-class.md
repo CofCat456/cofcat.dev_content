@@ -4,7 +4,7 @@ description: 參加六角學院於 2022 舉辦 JS 工程師養成直播班 - 202
 slug: js-2022-autumn-class
 date: 2022-11-05
 type: Project
-socialImage: /images/projects/
+socialImage: /images/projects/js-2022-autumn-class.jpg
 ---
 
 ## 簡介
