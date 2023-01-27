@@ -130,4 +130,4 @@ socialImage: /images/projects/coffeeShop.jpg
 ### 相關連結
 
 - 程式碼（Github) : [CofCat456/CoffeeShop](https://github.com/CofCat456/coffeeShop)
-- 官網 : [貓咖啡](https://cofcat456.github.io/coffeeShop/#/)
+- 網站 : [貓咖啡](https://cofcat456.github.io/coffeeShop/#/)
