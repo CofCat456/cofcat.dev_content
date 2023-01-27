@@ -4,7 +4,7 @@ description: 參加六角學院於 2022 舉辦大專院校程式體驗營的期�
 slug: hexScool_summer_intern
 date: 2023-01-27
 type: Project
-socialImage: /images/projects/hexScool_summer_intern.png
+socialImage: /images/projects/hexScool_homePage.jpg
 ---
 
 ## 簡介
