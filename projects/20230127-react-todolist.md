@@ -46,6 +46,6 @@ socialImage: /images/projects/react_todoList.jpg
 
 ### 相關連結
 
-- 程式碼（Github) : [CofCat456/react-todolist](https://github.com/CofCat456/react-todoList)
+- 程式碼（Github) : [react-todolist](https://github.com/CofCat456/react-todoList)
 - 網站 : [React-Todolist](https://cofcat456.github.io/react-todoList)
 

@@ -15,5 +15,5 @@ socialImage: /images/projects/hexScool_summer_intern.png
 
 ![Imgur](https://i.imgur.com/Nn2ycgw.jpg)
 
-- 程式碼（Github) : [CofCat456/HexSchoolWork](https://github.com/CofCat456/HexSchoolWork/tree/main/jQuery)
+- 程式碼（Github) : [HexSchoolWork](https://github.com/CofCat456/HexSchoolWork/tree/main/jQuery)
 - 網站 : [六角首頁](https://cofcat456.github.io/HexSchoolWork/jQuery/)
