@@ -7,7 +7,7 @@ type: Post
 socialImage: https://cdn-images-1.medium.com/max/800/1*Jzgsv9EDB6crgxrVJCUY1g.png
 ---
 
-### 新手 JS 地下城 1F — 9x9 乘法表
+## 新手 JS 地下城 1F  —  9x9 乘法表
 
 ![](https://cdn-images-1.medium.com/max/800/1*Jzgsv9EDB6crgxrVJCUY1g.png)
 
@@ -19,13 +19,13 @@ socialImage: https://cdn-images-1.medium.com/max/800/1*Jzgsv9EDB6crgxrVJCUY1g.pn
 
 ---
 
-#### BOSS 弱點
+### BOSS 弱點
 
 1.  【特定技術】需使用 `JS for 迴圈技巧`，裡頭數字不能直接寫在 HTML 上，需使用 JS 印出。
 2.  需使用 HTML、CSS、JS 技術
 3.  介面需與設計稿一致
 
-#### 解題思路
+### 解題思路
 
 -   使用 Flex 完成畫面排版
 -   利用 Vue 元件概念將區塊做成元件

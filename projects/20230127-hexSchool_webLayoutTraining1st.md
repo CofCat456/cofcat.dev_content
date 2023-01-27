@@ -4,7 +4,7 @@ description: 參加六角學院於 2022 舉辦公益體驗營的期間作品
 slug: 20230127-hexSchool_webLayoutTraining1st
 date: 2023-01-27
 type: Project
-socialImage:
+socialImage: /images/projects/webLayoutTraining1st.jpeg
 ---
 
 ## 簡介
@@ -23,7 +23,7 @@ socialImage:
 
 ### Chattalker AI 機器人
 
-![Imgur](https://i.imgur.com/Nn2ycgw.jpg)
+![Imgur](https://i.imgur.com/iAA3yLC.jpg)
 
 - 設計稿: [Chattalker AI設計稿](https://xd.adobe.com/view/4922398e-1a6e-4d4b-848c-044a079713bb-1c71/specs/)
 - 程式碼（Github) : [CofCat456/HexSchool_webLayoutTraining1st](https://github.com/CofCat456/HexSchool_webLayoutTraining1st/tree/master/Task-2)
