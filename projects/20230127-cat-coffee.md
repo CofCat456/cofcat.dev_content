@@ -15,7 +15,7 @@ socialImage: /images/projects/coffeeShop.jpg
 ---
 
 ## 創店理念
-咖啡一直都是工作者們必備的良藥，尤其對工程師而言，在平常生活中，我喜歡帶上筆電，到咖啡廳中點一杯拿鐵，聽著店內的lofi音樂，不僅環境舒適，咖啡也帶給我源源不絕的能量，大幅提升我的學習品質。
+咖啡一直都是工作者們必備的良藥，尤其對工程師而言，在平常生活中，我喜歡帶上筆電，到咖啡廳中點一杯拿鐵，聽著店內的 lofi 音樂，不僅環境舒適，咖啡也帶給我源源不絕的能量，大幅提升我的學習品質。
 
 而近兩年，隨著疫情不斷變得嚴重，許多公司開始宣布遠端工作，而且可能長達數月以上。
 剛開始，工程師們可能會選擇到咖啡廳工作，不但保留人與人接觸的時間，也能喝到一杯絕佳的咖啡，保持工作品質，但伴隨著確診人數的增加，漸漸的，到咖啡廳工作，也變成是一種奢侈，
@@ -71,59 +71,63 @@ socialImage: /images/projects/coffeeShop.jpg
 
 ## 前台頁面介紹
 
+<br />
+
 ### 首頁 
 
 ![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
 
 ### 商品列表
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164473643-2c3efcaf-b983-4795-9694-869b5ddd3a10.png)
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164473703-c402f6d1-eec7-44d2-8a64-94ad5e878564.png)
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164473716-340e0490-6886-4aff-8787-5557c8b2cc34.png)
 
 ### 收藏清單
 * 利用 ` LocalStorage ` 儲存使用者收藏紀錄
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164474042-a0c95f5d-2526-4c5f-988e-85bcad27f2eb.png)
 
 ### 購物車
 * 可任意修改購買的商品數量（不得為負值）
 * 可套用優惠卷
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164474819-097cfb24-60a1-451a-a496-64accf8e364f.png)
 
 ### 訂單填寫
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164475904-4a4fb95b-c68e-4bcd-a3d4-d8a46131fe4d.png)
 
 * 紅色星號為必填項目
 * 每個欄位皆有格式驗證
 
 ### 訂單建立
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164476506-c20fb3f0-8eb8-4428-9030-99abdf746adb.png)
 
 ## 後台頁面介紹
 
 ### 商品管理頁面
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164477455-5b799d00-6d11-4fb0-a91c-7aac72a043de.png)
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164477524-426d61aa-bbfb-4f0a-9bd5-e7980680865c.png)
 
 ### 訂單管理
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164477839-0727af3a-cfe2-4d86-afb9-d41408565c00.png)
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164477939-3ae0e8db-4bdd-4593-bf9a-8ffd737e61c1.png)
 
 ### 優惠卷管理
 
-![](https://user-images.githubusercontent.com/93901409/164472984-b24ec430-cbcf-451d-ab41-c5721304455f.png)
+![](https://user-images.githubusercontent.com/93901409/164478123-84e56677-62fe-4cf8-9931-d7d80c1776d1.png)
 
 ---
+
+## 相關連結
 
 - 程式碼（Github) : [CofCat456/CoffeeShop](https://github.com/CofCat456/coffeeShop)
 - 官網 : [貓咖啡](https://cofcat456.github.io/coffeeShop/#/)
