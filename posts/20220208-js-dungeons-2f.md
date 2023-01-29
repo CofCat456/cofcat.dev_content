@@ -4,12 +4,12 @@ description: 六角學院 JS 地下城 - 2F 時鐘
 slug: js-dungeons-2f
 date: 2022-02-08
 type: Post
-socialImage: https://cdn-images-1.medium.com/max/800/1*l1hApnmk_ZTlJYuRLYAwhg.png
+socialImage: /images/posts/js-dungeons-2f.png
 ---
 
 ## 新手 JS 地下城 2F  —  時鐘
 
-![](https://cdn-images-1.medium.com/max/800/1*l1hApnmk_ZTlJYuRLYAwhg.png)
+![](/images/posts/js-dungeons-2f.png)
 
 **2F — 時鐘**
 

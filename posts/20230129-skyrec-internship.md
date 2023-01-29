@@ -4,10 +4,10 @@ description: 記錄自己在求職期間的過程以及在 SkyRec 的實習心�
 slug: skyrec-internship
 date: 2023-01-29
 type: Post
-socialImage: https://i.imgur.com/v8uHopG.jpg
+socialImage: /images/posts/skyrec-internship.jpg
 ---
 
-![Imgur](https://i.imgur.com/v8uHopG.jpg)
+![Imgur](/images/posts/skyrec-internship.jpg)
 
 ## 前言
 
@@ -21,7 +21,7 @@ socialImage: https://i.imgur.com/v8uHopG.jpg
 
 原本是打算找 React 的職缺的我，雖然對 Vue 比較熟悉，但想想自己還是比較喜歡 React 的風格。
 
-那時在 104 上看到了一個職缺是 *(實習) 前端開發工程師 / Frontend Engineer (F2E, Vue, React)*，覺得對兩個框架都接觸過的我來說，挺適合的，薪水也不錯，於是就投遞履歷了，也運氣不錯的收到了面試邀約
+那時在 104 上看到了一個職缺是 (實習) 前端開發工程師 / Frontend Engineer (F2E, Vue, React)**，覺得對兩個框架都接觸過的我來說，挺適合的，薪水也不錯，於是就投遞履歷了，也運氣不錯的收到了面試邀約
 
 面試總共有兩關，分為 phone interview ➡ onsite interview
 

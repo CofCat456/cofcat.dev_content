@@ -4,12 +4,12 @@ description: 六角學院 JS 地下城 - 1F 9x9 乘法表
 slug: js-dungeons-1f
 date: 2022-02-06
 type: Post
-socialImage: https://cdn-images-1.medium.com/max/800/1*Jzgsv9EDB6crgxrVJCUY1g.png
+socialImage: /images/posts/js-dungeons-1f.png
 ---
 
 ## 新手 JS 地下城 1F  —  9x9 乘法表
 
-![](https://cdn-images-1.medium.com/max/800/1*Jzgsv9EDB6crgxrVJCUY1g.png)
+![](/images/posts/js-dungeons-1f.png)
 
 **六角學院 _新手 JS 地下城 1F_**
 
