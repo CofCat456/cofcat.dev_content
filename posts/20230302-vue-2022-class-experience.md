@@ -1,7 +1,7 @@
 ---
 title: 2022 六角學院 - Vue 直播班心得
 description: 記錄參加六角學院 - Vue 作品實戰班 - 2022 冬季班上課心得。
-slug: 20230302-vue-2022-class-experience
+slug: vue-2022-class-experience
 date: 2023-03-02
 type: Post
 socialImage: /images/posts/vue-2022-experience.jpg
@@ -15,7 +15,7 @@ socialImage: /images/posts/vue-2022-experience.jpg
 
 ## 1. 當初為什麼報名這堂課？
 
-在去
+想報名直播班最大的原因是，一開始自己在自學時，常常
 
 ## 2. 第一週~第八週的學習過程
 
