@@ -1,5 +1,5 @@
 ---
-title: 2022 六角學院 - Vue 直播班心得
+title: 六角學院 — 2022 Vue 冬季直播班心得
 description: 記錄參加六角學院 - Vue 作品實戰班 - 2022 冬季班上課心得。
 slug: vue-2022-class-experience
 date: 2023-03-02
